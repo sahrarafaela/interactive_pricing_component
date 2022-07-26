@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="waves">
+      <h1>Simple, traffic-based pricing</h1>
+      <p class="paragraph">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+      <div class="inicio">
+        <p class="preco">100K pageviews</p>
+        <p class="valuea">$ <span class="value" id="value"> 0 </span></p>
+
+        <p class="month">/month</p>
+      </div>
+      <div>
+        <input
+          class="movendo"
+          type="range"
+          min="0"
+          max="100000"
+          value="10"
+          step="1"
+        />
+        <div class="segundaParte">
+          <p>Monthly Billing</p>
+          <div class="switch__container">
+            <input
+              id="switch-shadow"
+              class="switch switch--shadow"
+              type="checkbox"
+            />
+            <label for="switch-shadow"></label>
+          </div>
+          <p>Yearly Billing</p>
+          <p class="paragra">25% discount</p>
+        </div>
+      </div>
+      <ul class="lista">
+        <li><span class="vvv">V </span> websites</li>
+        <li><span class="vvv">V </span>100% data ownership</li>
+        <li><span class="vvv">V </span>Email reports Start my trial</li>
+        <div class="attribution">
+          <button>Start my trial</button>
+        </div>
+      </ul>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
